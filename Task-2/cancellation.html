@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cancel Order – EcoBottle</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-b from-purple-100 to-purple-200 text-gray-800 font-sans min-h-screen flex flex-col justify-center items-center px-4">
+
+  <!-- Cancel Order Card -->
+  <div class="bg-white shadow-2xl rounded-2xl p-10 max-w-xl w-full text-center animate-fadeIn">
+    <h1 class="text-3xl font-extrabold text-purple-900 mb-4">We're sorry to see you go 😢</h1>
+    <p class="text-purple-700 mb-6">
+      Please help us improve by telling us why you're cancelling your EcoBottle pre-order.
+    </p>
+
+    <!-- Reason Form -->
+    <form action="success.html" method="GET" class="text-left space-y-4">
+    <label for="reason" class="block text-sm font-semibold text-purple-700">Reason for cancellation:</label>
+
+      <div class="space-y-2 text-sm text-purple-800">
+        <label class="block">
+          <input type="radio" name="reason" value="Changed my mind" class="mr-2"> Changed my mind
+        </label>
+        <label class="block">
+          <input type="radio" name="reason" value="Too expensive" class="mr-2"> Too expensive
+        </label>
+        <label class="block">
+          <input type="radio" name="reason" value="Not what I expected" class="mr-2"> Not what I expected
+        </label>
+        <label class="block">
+          <input type="radio" name="reason" value="Found a better alternative" class="mr-2"> Found a better alternative
+        </label>
+        <label class="block">
+          <input type="radio" name="reason" value="Other" class="mr-2"> Other
+        </label>
+      </div>
+
+      <div class="mt-4">
+        <label for="comments" class="block text-sm font-semibold text-purple-700">Additional feedback (optional):</label>
+        <textarea id="comments" rows="3" class="w-full mt-1 p-2 border rounded-md focus:ring-purple-400 focus:ring-2"></textarea>
+      </div>
+    
+      <button type="submit" class="w-full mt-6 bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition">
+        Confirm Cancellation
+      </a>
+      </button>
+    </form>
+
+    <!-- Back Link -->
+    <div class="mt-6">
+      <a href="index.html" class="text-sm text-purple-600 hover:underline">← Go back to homepage</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-10 text-purple-500 text-sm">
+    © 2025 EcoBottle. We value your feedback.
+  </footer>
+
+</body>
+</html>

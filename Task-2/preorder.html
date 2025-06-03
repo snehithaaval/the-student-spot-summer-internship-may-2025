@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoBottle – Pre-Order Now</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-purple-100 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6">
+    <div class="text-xl font-bold text-purple-900 tracking-wide">EcoBottle</div>
+    <nav>
+      <a href="index.html" class="text-purple-700 hover:underline">Home</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-4">
+    <h1 class="text-4xl md:text-5xl font-bold text-purple-900 mb-4">Secure Your EcoBottle Today</h1>
+    <p class="text-lg text-purple-700 mb-6">Be among the first to experience the smart, sustainable way to stay hydrated.</p>
+    
+    <!-- Pre-order Form -->
+    <div class="max-w-lg mx-auto bg-white shadow-xl rounded-2xl p-8">
+      <form class="space-y-6" action="confirmation.html">
+        <div>
+          <label class="block mb-1 text-sm text-purple-700" for="name">Name</label>
+          <input type="text" id="name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400" required>
+        </div>
+        <div>
+          <label class="block mb-1 text-sm text-purple-700" for="email">Email</label>
+          <input type="email" id="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400" required>
+        </div>
+        <button type="submit" class="w-full bg-purple-600 text-white py-3 rounded-lg text-lg font-semibold hover:bg-purple-700 transition">Pre-Order Now</button>
+      </form>
+    </div>
+
+    <!-- Message -->
+    <p class="mt-8 text-sm text-purple-600">We’ll notify you when your EcoBottle is ready to ship. Expected delivery: Fall 2025.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-purple-500 text-sm">
+    © 2025 EcoBottle. All rights reserved.
+  </footer>
+
+</body>
+</html>
