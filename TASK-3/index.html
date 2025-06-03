@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do + Alarm App</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">🧠 TaskMate</h2>
+      <nav>
+        <button class="nav-btn active" onclick="filterTasks('all')">All Tasks</button>
+        <button class="nav-btn" onclick="filterTasks('alarm')">Alarms</button>
+        <button class="nav-btn" onclick="filterTasks('todo')">To-Dos</button>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <header>
+        <h1>Welcome, <span id="usernameDisplay">User</span></h1>
+        <button class="add-btn" onclick="openTaskModal()">+ Add Task</button>
+      </header>
+
+      <!-- Calendar -->
+      <div class="calendar-container">
+        <label>Date: <input type="date" id="filterDate" onchange="filterByDate()"/></label>
+      </div>
+
+      <!-- Task List -->
+      <section class="task-list" id="taskList">
+        <!-- Tasks dynamically added here -->
+      </section>
+    </main>
+  </div>
+
+  <!-- Task Modal -->
+  <div class="modal hidden" id="taskModal">
+    <div class="modal-content">
+      <h2>Add New Task</h2>
+      <input type="text" id="taskTitle" placeholder="Task Title"/>
+      <textarea id="taskDesc" placeholder="Task Description"></textarea>
+      <label>Date: <input type="date" id="taskDate"/></label>
+      <label>Time: <input type="time" id="taskTime"/></label>
+      <label><input type="checkbox" id="isAlarm"/> Set as Alarm</label>
+      <div class="modal-actions">
+        <button onclick="saveTask()">Save</button>
+        <button onclick="closeTaskModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Greeting Modal -->
+  <div class="modal" id="greetModal">
+    <div class="modal-content">
+      <h2>Hello!</h2>
+      <p>What’s your name?</p>
+      <input type="text" id="usernameInput" placeholder="Enter your name"/>
+      <button onclick="saveUsername()">Start</button>
+    </div>
+  </div>
+
+    <!-- Alarm Sound -->
+  <audio id="alarmSound" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" preload="auto" loop></audio>
+
+  <!-- Alarm Modal -->
+  <div class="modal hidden" id="alarmModal">
+    <div class="modal-content">
+      <h2>⏰ Alarm!</h2>
+      <p id="alarmTaskTitle">It's time to do your task!</p>
+      <button onclick="stopAlarm()">Stop Alarm</button>
+    </div>
+  </div>
+
+  <!-- 🔧 TEMPORARY TEST BUTTON -->
+  <button 
+    onclick="document.getElementById('alarmModal').classList.remove('hidden')"
+    style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; padding: 10px 20px; background: red; color: white; border: none; border-radius: 10px;">
+    Test Alarm Modal
+  </button>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
