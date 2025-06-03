@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snehitha Aval Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #004d47;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background: white;
+      color: black;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #008b8b;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem 3rem;
+      flex-wrap: wrap;
+      background-color: #004d47;
+    }
+
+    .text-box {
+      flex: 1;
+      min-width: 300px;
+      padding-right: 2rem;
+    }
+
+    .text-box h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .text-box p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #d0e1e1;
+    }
+
+    .image-box {
+      flex: 1;
+      text-align: center;
+    }
+
+    .image-box img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 50%;
+      border: 4px solid white;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .text-box {
+        padding-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🌙</div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skill.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="text-box">
+      <h1>Hi!! This is Snehitha Aval</h1>
+      <p>I design and build creative web experiences. Explore my world of code, creativity, and design.</p>
+    </div>
+    <div class="image-box">
+      <img src="C:\Users\snehi\OneDrive\Documents\moon.png.jpg"/>
+    </div>
+  </section>
+</body>
+</html>

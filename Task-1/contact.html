@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Snehitha Aval</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #004d47;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background: white;
+      color: black;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #008b8b;
+    }
+
+    .contact-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 85vh;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .contact-content {
+      max-width: 600px;
+    }
+
+    .contact-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .contact-info {
+      font-size: 1.2rem;
+      color: #d0e1e1;
+      line-height: 2;
+    }
+
+    .contact-info a {
+      color: #c4f0e0;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-info a:hover {
+      color: #00ffff;
+    }
+
+    @media (max-width: 768px) {
+      .contact-content h1 {
+        font-size: 2rem;
+      }
+
+      .contact-info {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🌙</div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skill.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <div class="contact-content">
+      <h1>Let's Connect</h1>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:snehithaaval@gmail.com">snehithaaval@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/snehitha-aval" target="_blank">Snehitha Aval</a></p>
+        <p>GitHub: <a href="https://github.com/snehithaaval" target="_blank">github.com/snehithaaval</a></p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
